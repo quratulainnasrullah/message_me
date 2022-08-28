@@ -10,6 +10,11 @@ import "channels"
 
 Rails.start()
 Turbolinks.start()
-//= require semantic-ui
-//= jquery
+
+require('jquery')
+import '@doabit/semantic-ui-sass'
+
+$(document).on('turbolinks:load', function() {
+    $('.ui.dropdown').dropdown();
+}) 
 ActiveStorage.start()
