@@ -10,4 +10,6 @@ import "channels"
 
 Rails.start()
 Turbolinks.start()
+//= require semantic-ui
+//= jquery
 ActiveStorage.start()
