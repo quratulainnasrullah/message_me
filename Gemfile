@@ -17,6 +17,7 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+gem 'net-smtp', require: false
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -41,9 +42,6 @@ group :production do
 gem 'pg'
 
 end
-
-
-
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
