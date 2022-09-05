@@ -15,6 +15,17 @@ require('jquery')
 import '@doabit/semantic-ui-sass'
 
 $(document).on('turbolinks:load', function() {
+   window.scroll_bottom = () => {
+    if ($('#messages').length > 0){
+      $('#messages').scrollTop($('#messages')[0].scrollHeight);
+    }
+   }
+
+   console.log("we are ready")
     $('.ui.dropdown').dropdown();
+    $('.message .close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
+  scroll_bottom();
 }) 
 ActiveStorage.start()
